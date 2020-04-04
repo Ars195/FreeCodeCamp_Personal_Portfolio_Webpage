@@ -34,3 +34,29 @@ main {
   background: lightgrey;
   padding-top: 45vh;
 }
+#projects {
+  text-align: center;
+  background: white;
+}
+.tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.project-tile {
+  background: white;
+  padding: 2em;
+}
+
+.project-tile a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}

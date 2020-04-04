@@ -60,3 +60,26 @@ main {
   max-width: 100%;
   height: auto;
 }
+#profile {
+  text-align: center;
+  background: lightgrey;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.circle {
+  background: grey;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+#profile-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}

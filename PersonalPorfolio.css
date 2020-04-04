@@ -83,3 +83,8 @@ main {
   color: black;
   font-size: 1.2em;
 }
+#copyright {
+  text-align: center;
+  background: deepskyblue;
+  padding: 1em;
+}

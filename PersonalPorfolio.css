@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  background: deepskyblue;
+  background: #be3144;
 }
 
 #navbar a {
@@ -23,7 +23,7 @@ body {
 }
 
 #navbar a:hover {
-  background: #00abe5;
+  background: #45567d;
 }
 main {
   display: grid;
@@ -31,12 +31,15 @@ main {
 }
 #welcome-section {
   text-align: center;
-  background: lightgrey;
+  background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   padding-top: 45vh;
+  color: white;
+  font-size: 25px
 }
 #projects {
   text-align: center;
-  background: white;
+  background: #45567d;
 }
 .tiles {
   display: grid;
@@ -62,10 +65,14 @@ main {
 }
 #profile {
   text-align: center;
-  background: lightgrey;
+  background: #303841;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  color: white;
+}
+#profile h1{
+	font-size: 50px;
 }
 
 .circle {
@@ -85,6 +92,39 @@ main {
 }
 #copyright {
   text-align: center;
-  background: deepskyblue;
+  background: #303841;
   padding: 1em;
+  border-top: 2px solid #be3144;
+  color: white;
+}
+@media all and (max-width: 800px) {
+  #navbar {
+    justify-content: space-around;
+  }
+
+  .tiles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #navbar {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  #navbar a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  #navbar a:last-of-type {
+    border-bottom: none;
+  }
+
+  .tiles {
+    grid-template-columns: 1fr;
+  }
 }

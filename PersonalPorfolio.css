@@ -25,3 +25,12 @@ body {
 #navbar a:hover {
   background: #00abe5;
 }
+main {
+  display: grid;
+  grid-template-rows: 100vh auto 300px 100px;
+}
+#welcome-section {
+  text-align: center;
+  background: lightgrey;
+  padding-top: 45vh;
+}
